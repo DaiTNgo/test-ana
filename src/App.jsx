@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-H6WBYDV9X9');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
 	const [count, setCount] = useState(0);
