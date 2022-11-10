@@ -49,14 +49,27 @@ function App() {
 }
 
 function A() {
-	useEffect(() => {
-		ReactGA.event({
-			category: 'User',
-			action: 'Created an Account',
-		});
-	}, []);
+	const [name, setName] = useState('');
 
-	return <h1>hello</h1>;
+	const handleClick = () => {
+		ReactGA.event({
+			user_namee: name,
+		});
+	};
+
+	return (
+		<div>
+			<h1>{name}</h1>
+			<input
+				type='text'
+				value={name}
+				onChange={(e) => {
+					setName(e.target.value);
+				}}
+			/>
+			<button onClick={handleClick}>Submit</button>
+		</div>
+	);
 }
 
 export default App;
