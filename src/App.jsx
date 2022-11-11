@@ -61,10 +61,11 @@ function A() {
 		<div>
 			<h1>{name}</h1>
 			<input
+            className='input-3'
 				type='text'
 				value={name}
 				onChange={(e) => {
-					setName(e.target.value);
+					setName(e.target.value);                             
 				}}
 			/>
 			<button onClick={handleClick}>Submit</button>
