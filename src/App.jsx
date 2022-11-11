@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ReactGA from 'react-ga';
-ReactGA.initialize('G-1GN712E90M');
+ReactGA.initialize('G-3YZCG8VTGG');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
@@ -61,11 +61,11 @@ function A() {
 		<div>
 			<h1>{name}</h1>
 			<input
-            className='input-3'
+				className='input-3'
 				type='text'
 				value={name}
 				onChange={(e) => {
-					setName(e.target.value);                             
+					setName(e.target.value);
 				}}
 			/>
 			<button onClick={handleClick}>Submit</button>
