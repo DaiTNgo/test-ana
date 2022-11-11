@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import ReactGA from 'react-ga';
 ReactGA.initialize('G-3YZCG8VTGG');
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.pageview(window.location.pathname);
 
 function App() {
 	const [count, setCount] = useState(0);
